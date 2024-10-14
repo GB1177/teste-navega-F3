@@ -13,8 +13,22 @@ describe('LoginComponent', () => {
   let mockRouter: any;
 
   class MockAuthService {
+    private users = mockUsers; 
+
     login(emailCpf: string, password: string) {
-      return true; // Retorna verdadeiro para simular um login bem-sucedido
+      const user = this.users.find(
+        (u) => u.emailCpf === emailCpf && u.password === password
+      );
+
+      if (user) {
+        localStorage.setItem(
+          'loggedInUser',
+          JSON.stringify({ emailCpf, password })
+        );
+        return true;
+      }
+
+      return false;
     }
   }
 
@@ -32,7 +46,8 @@ describe('LoginComponent', () => {
     };
 
     TestBed.configureTestingModule({
-      imports: [FormsModule, LoginComponent], // Adicionando LoginComponent aqui
+      imports: [FormsModule],
+      declarations: [LoginComponent],
       providers: [
         { provide: Router, useValue: mockRouter },
         { provide: ActivatedRoute, useValue: activatedRouteStub },
