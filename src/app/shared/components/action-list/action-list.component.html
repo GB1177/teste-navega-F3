@@ -1,0 +1,27 @@
+<div class="plan-container">
+  <img
+    class="plan-image"
+    src="../../../../assets/images/meu-plano-imagem.svg"
+    alt="Imagem do plano"
+  />
+  <div class="plan-title">Meu plano</div>
+  <div class="plan-subtitle">O que você quer fazer?</div>
+</div>
+
+<div class="action-list">
+  <div
+    *ngFor="let option of listedOptions"
+    class="action-item"
+    (click)="onActionSelect(option.value)"
+  >
+    <img [src]="option.icon" alt="{{ option.label }}" class="icon-left" />
+    {{ option.label }}
+    <img
+      src="assets/icons/seta-direita-proximo.svg"
+      alt="Seta direita"
+      class="icon-right"
+      style="margin-left: auto"
+    />
+    <hr class="action-separator" />
+  </div>
+</div>

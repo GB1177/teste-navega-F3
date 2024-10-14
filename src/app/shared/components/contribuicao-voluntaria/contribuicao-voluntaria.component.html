@@ -1,0 +1,34 @@
+<p-card *ngIf="contributionVoluntaria">
+  <div style="position: absolute">
+    <img
+      class="coins"
+      src="../../../../assets/images/coins.svg"
+      alt="Coins"
+    />
+  </div>
+  <span style="font-weight: 600; font-size: large; margin-left: 2rem;"
+    >Contribuição voluntária</span
+  >
+  <hr />
+  <div class="card-content">
+    <div class="contribution-row">
+      <span>Valor da contribuição</span>
+      <span style="margin-left: 27rem; font-weight: bold">{{
+        contributionVoluntaria | brCurrency
+      }}</span>
+    </div>
+  </div>
+
+  <div style="margin-top: 1rem; margin-left: 4rem">
+    <span
+      style="
+        color: #1aaab2;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+      "
+    >
+      Alterar Contribuição
+    </span>
+  </div>
+</p-card>

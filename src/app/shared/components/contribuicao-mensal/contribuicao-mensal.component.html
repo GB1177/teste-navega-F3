@@ -1,0 +1,36 @@
+<p-card *ngIf="contributionMensal">
+  <div style="position: absolute">
+    <img class="coins" src="../../../../assets/images/coins.svg" alt="Coins" />
+  </div>
+  <span
+    style="position: relative; left: 2.5rem; font-weight: 600; font-size: large"
+  >
+    Contribuição mensal
+  </span>
+  <hr class="custom-hr-card" />
+  <div>
+    <div class="contribution-row">
+      <span>Valor da contribuição</span>
+      <span style="margin-left: 27rem; font-weight: bold">
+        {{ contributionMensal | brCurrency }}
+      </span>
+    </div>
+    <div class="contribution-row">
+      <span>Porcentagem do salário</span>
+      <span style="margin-left: 30rem; font-weight: bold">
+        {{ porcentagemSalarioMensal }}%
+      </span>
+    </div>
+
+    <div style="margin-top: 1rem; margin-left: 4rem">
+      <span
+        style="
+          color: #1aaab2;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;">
+        Alterar Contribuição
+      </span>
+    </div>
+  </div>
+</p-card>

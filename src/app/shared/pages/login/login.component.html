@@ -1,0 +1,85 @@
+<div class="login-container">
+  <div class="login-form">
+    <img
+      class="logo-navega"
+      src="../../../../assets/images/Logo Navega.svg"
+      alt="Logo Navega"
+      style="margin-bottom: 3rem;"
+    />
+    <p class="welcome-text">
+      Boas-vindas ao Portal! <br />
+      Para começar, qual seu email ou CPF?
+    </p>
+    <p class="info-text">
+      Precisamos desta confirmação para dar <br />
+      início ao seu acesso.
+    </p>
+
+    <form (ngSubmit)="onSubmit()">
+      <div class="input-group">
+        <label for="emailCpf">Email ou CPF</label>
+        <input
+          id="emailCpf"
+          pInputText
+          type="text"
+          [(ngModel)]="loginData.emailCpf"
+          name="emailCpf"
+          required
+          (blur)="formatCpfIfNecessary()"
+          placeholder="Digite seu email ou CPF"
+        />
+        <img
+          class="logo-navega"
+          src="../../../../assets/images/check-OK.svg"
+          alt="check-OK"
+          style="top: 70%"
+          *ngIf="isValidInput()"
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="password">Senha</label>
+        <input
+          id="password"
+          pPassword
+          [(ngModel)]="loginData.password"
+          name="password"
+          required
+          [type]="passwordVisible ? 'text' : 'password'"
+        />
+        <img
+          class="logo-navega"
+          src="../../../../assets/images/eye-password.svg"
+          alt="show-hide-eye"
+          (click)="togglePasswordVisibility()"
+          style="top: 70%; cursor: pointer"
+        />
+      </div>
+
+      <div class="card flex justify-content-center">
+        <button class="access-button" type="submit">Acessar</button> <!-- Botão de submissão -->
+      </div>
+
+      <div class="forgot-password">
+        <p>
+          Esqueceu a senha?
+          <a [routerLink]="'/esqueci-a-senha'" class="forgot-link"
+            >Acesse aqui</a
+          >
+        </p>
+      </div>
+
+      <div class="version-info">
+        <p>Versão 0.01</p>
+      </div>
+    </form>
+  </div>
+
+  <div class="login-image">
+    <img
+      src="../../../../assets/images/dashboard-login.svg"
+      alt="Login image"
+    />
+    <p class="dashboard-welcome-text">Bem-vindo a seu novo Dashboard</p>
+  </div>
+</div>

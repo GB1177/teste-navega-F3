@@ -1,0 +1,30 @@
+<div class="dashboard-container">
+  <app-navbar></app-navbar>
+  <app-header></app-header>
+
+  <div class="main-content">
+    <div class="left-section">
+      <app-action-list></app-action-list>
+    </div>
+
+    <div class="right-section">
+      <div class="dashboard-container">
+        <app-dashboard-chart></app-dashboard-chart>
+        <hr style="width: 90%; margin-right: 10%" />
+
+        <div class="contribution-cards">
+          <app-contribuicao-mensal
+            [contributionMensal]="contributionMensal"
+            [porcentagemSalarioMensal]="porcentagemSalarioMensal"
+          >
+          </app-contribuicao-mensal>
+          <app-contribuicao-voluntaria
+            [contributionVoluntaria]="contributionVoluntaria"
+          ></app-contribuicao-voluntaria>
+
+          <button class="incluir-contribuicao-btn">Incluir Contribuição</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

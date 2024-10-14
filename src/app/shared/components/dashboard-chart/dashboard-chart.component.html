@@ -1,0 +1,28 @@
+<div class="chart-container">
+  <h2>Total em contribuições</h2>
+
+  <div class="total-contributions">
+    <strong>{{ getTotalContribuicoes() | brCurrency }}</strong>
+  </div>
+  <div class="chart">
+    <p-chart type="doughnut" [data]="doughnutData"></p-chart>
+  </div>
+
+  <div class="contribution-info">
+    <div class="contribution-item">
+      <div class="dot" style="background-color: #e22e6f"></div>
+      <div class="text">Contribuição mensal</div>
+    </div>
+    <div class="value">
+      {{ contributionMensal | brCurrency }}
+    </div>
+    <div class="contribution-item">
+      <div class="dot" style="background-color: #594cbe"></div>
+      <div class="text">Contribuição voluntária</div>
+    </div>
+
+    <div class="value">
+      {{ contributionVoluntaria | brCurrency }}
+    </div>
+  </div>
+</div>

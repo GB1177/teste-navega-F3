@@ -1,15 +1,14 @@
 module.exports = {
   preset: 'jest-preset-angular',
-  setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
+  testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.(ts|mjs|html)$': ['ts-jest', { useESM: true }],
+    '^.+\\.ts$': 'ts-jest',
   },
-  transformIgnorePatterns: [
-    '/node_modules/(?!@angular)/', 
-  ],
-  globals: {
-    'ts-jest': {
-      tsconfig: 'tsconfig.spec.json',
-    },
+  moduleFileExtensions: ['ts', 'js', 'html'],
+  transformIgnorePatterns: ['<rootDir>/node_modules/(?!@angular)'], 
+  setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
+  moduleNameMapper: {
+    '@app/(.*)': '<rootDir>/src/app/$1',
+    '@shared/(.*)': '<rootDir>/src/app/shared/$1',
   },
 };

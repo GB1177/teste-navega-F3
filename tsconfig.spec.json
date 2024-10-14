@@ -1,12 +1,11 @@
 {
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "target": "es2020",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true
+    "outDir": "./out-tsc/spec",
+    "types": ["jest", "node"],
+    "module": "commonjs",
+    "esModuleInterop": true 
   },
-  "include": ["src/**/*.ts", "src/**/*.spec.ts"]
+  "files": ["src/test.ts", "src/polyfills.ts"],
+  "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
 }

@@ -1,0 +1,58 @@
+.contribution-card {
+  /* Estilos gerais para o card */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 45rem;
+  margin-bottom: 20px;
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+
+    .coins {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .custom-span {
+    font-weight: 600;
+    font-size: large;
+    margin-left: 10px; /* Alinhamento ao lado esquerdo */
+  }
+
+  hr {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .card-content {
+    .contribution-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+
+      span {
+        font-size: 1rem;
+      }
+
+      span:first-child {
+        text-align: left;
+        font-weight: normal;
+      }
+
+      span:last-child {
+        text-align: right;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
