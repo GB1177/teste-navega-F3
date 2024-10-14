@@ -1,27 +1,41 @@
-# TesteNavegaF3
+# Teste Navega F3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+## Descrição
 
-## Development server
+Este é um projeto Angular chamado **Teste Navega F3**, desenvolvido com Angular na versão 16.2.0 e usando várias bibliotecas populares como PrimeNG e Chart.js. O projeto inclui funcionalidades de login e gerenciamento de contribuições, entre outras.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Pré-requisitos
 
-## Code scaffolding
+Antes de começar, verifique se você tem os seguintes softwares instalados em seu sistema:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Node.js](https://nodejs.org/) (versão 20.13 ou superior)
+- [Angular CLI](https://angular.io/cli) (versão 16.2.16 ou superior)
 
-## Build
+## Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/GB1177/teste-navega-F3.git
+   cd teste-navega-f3
+2. Instale as dependências: Execute o seguinte comando para instalar as dependências do projeto:
+   -  npm install
+       
+Executando o Projeto
+Para iniciar o servidor de desenvolvimento e ver o aplicativo no seu navegador, utilize o comando:
+   - npm start
 
-## Running unit tests
+Executando Testes
+Este projeto utiliza Jest para testes. Para executar os testes, use o seguinte comando:
+   - npm test
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Credenciais de login mockadas
+----------------------------
+Entrada E-mail
+   teste@f3.com
+Senha
+   123456
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Entrada CPF
+   828.180.070-46
+Senha
+   123456
