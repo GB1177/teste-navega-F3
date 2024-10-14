@@ -8,7 +8,7 @@ describe('ContribuicaoVoluntariaComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ContribuicaoVoluntariaComponent]
+      imports: [ContribuicaoVoluntariaComponent]
     });
     fixture = TestBed.createComponent(ContribuicaoVoluntariaComponent);
     component = fixture.componentInstance;

@@ -40,7 +40,6 @@ export class LoginComponent {
     ) {
       console.log('Login bem-sucedido');
       this.router.navigate(['/dashboard']).then(() => {
-        console.log('Redirecionamento bem-sucedido!');
       });
     } else {
       console.error('Credenciais inválidas');

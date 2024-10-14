@@ -1,3 +1,25 @@
+.header-title {
+  font-weight: 600;
+  font-size: large;
+  margin-left: 2rem;
+}
+
+.valor-contribuicao {
+  margin-left: 27rem;
+  font-weight: bold;
+}
+
+.alterar-contribuicao {
+  margin-top: 1rem;
+  margin-left: 4rem;
+}
+
+.span-title {
+  color: #1aaab2;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
 .contribution-card {
   padding: 15px;
   border: 1px solid #ccc;
@@ -55,3 +77,21 @@
   }
 }
 
+@media (max-width: 768px) {
+  .contribution-cards {
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .contribution-row {
+    .valor-contribuicao {
+    margin-left: 5rem;
+    font-weight: bold;
+    position: relative;
+    bottom: 0.3rem;
+    }
+  }
+}

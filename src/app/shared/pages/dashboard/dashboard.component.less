@@ -204,6 +204,10 @@
     }
 
     @media (max-width: 768px) {
+  ::ng-deep .chart-container {
+    position: relative !important;
+    right: 90% !important;
+  }
       .main-content {
         flex-direction: column;
         align-items: center;
@@ -214,7 +218,7 @@
 
         app-navbar,
         app-header {
-          display: none; 
+          display: none;
         }
 
         .right-section {
@@ -225,6 +229,10 @@
 
       .right-section > .dashboard-container {
         width: 100%;
+      }
+
+      .contribution-cards {
+        width: 22rem;
       }
     }
   }

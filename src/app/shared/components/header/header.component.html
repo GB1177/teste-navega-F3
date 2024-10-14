@@ -1,9 +1,11 @@
-  <div class="header">
-    <img
-      src="../../../../assets/images/seta-esquerda.svg"
-      alt="Seta Esquerda"
-      class="back-arrow"
-    />
-    <span class="header-span">Meu plano</span>
-    <hr class="custom-hr" />
-  </div>
+<div class="header">
+  <img
+    src="../../../../assets/images/seta-esquerda.svg"
+    alt="Seta Esquerda"
+    class="back-arrow"
+  />
+  <span class="header-span">
+    {{ isMobile ? 'Contribuições' : 'Meu plano' }}
+  </span>
+  <hr class="custom-hr" />
+</div>

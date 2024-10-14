@@ -8,7 +8,7 @@ describe('ContribuicaoMensalComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ContribuicaoMensalComponent]
+      imports: [ContribuicaoMensalComponent]
     });
     fixture = TestBed.createComponent(ContribuicaoMensalComponent);
     component = fixture.componentInstance;
