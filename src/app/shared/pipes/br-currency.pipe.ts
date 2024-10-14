@@ -10,7 +10,6 @@ export class BrCurrencyPipe implements PipeTransform {
       return '';
     }
 
-    // Converte o número para uma string e usa toLocaleString
     return (
       'R$ ' +
       value

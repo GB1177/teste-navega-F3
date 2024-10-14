@@ -10,9 +10,9 @@
       padding: 20px;
       max-width: 100%;
       display: flex;
-      flex-direction: column; /* Organiza os itens na vertical */
-      align-items: center; /* Centraliza todos os itens horizontalmente */
-      text-align: center; /* Garante que os textos sejam centralizados */
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
 
       .welcome-text {
         font-size: 1.3rem;
@@ -32,7 +32,7 @@
         margin-bottom: 15px;
         text-align: left;
         width: 20rem;
-        position: relative; /* Necessário para o posicionamento absoluto da imagem do olho */
+        position: relative;
 
         label {
           display: block;
@@ -42,9 +42,9 @@
         }
 
         input {
-          width: 100%; /* Ocupa toda a largura disponível */
-          max-width: 350px; /* Largura máxima do input */
-          min-width: 250px; /* Largura mínima para garantir que o input não fique pequeno demais */
+          width: 100%;
+          max-width: 350px;
+          min-width: 250px;
           padding: 8px 10px;
           font-size: 1rem;
           border: none;
@@ -53,7 +53,7 @@
           outline: none;
           box-shadow: none;
           transition: border-color 0.3s ease;
-          margin: 0 auto; /* Centraliza os inputs */
+          margin: 0 auto;
 
           &:focus {
             border-color: #1AAAB2;
@@ -64,13 +64,12 @@
           }
         }
 
-        /* Estilos para a imagem do olho */
         img.logo-navega {
-          position: absolute; /* Posiciona a imagem de forma absoluta dentro do container */
-          top: 50%; /* Alinha verticalmente ao centro do input */
-          right: 10px; /* Alinha a imagem à direita do input */
-          transform: translateY(-50%); /* Ajuste fino para centralizar verticalmente */
-          cursor: pointer; /* Indica que a imagem é interativa */
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translateY(-50%);
+          cursor: pointer; 
         }
       }
 

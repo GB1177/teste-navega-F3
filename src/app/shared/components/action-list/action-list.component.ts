@@ -39,9 +39,7 @@ export class ActionListComponent {
     return this.contributionMensal + this.contributionVoluntaria;
   }
 
-  // Função chamada quando uma ação é selecionada
   onActionSelect(action: string) {
     console.log(`Ação selecionada: ${action}`);
-    // Aqui você pode adicionar lógica para o que deve acontecer ao clicar na ação
   }
 }

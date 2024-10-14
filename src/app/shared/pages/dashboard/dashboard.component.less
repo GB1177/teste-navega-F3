@@ -203,33 +203,29 @@
       }
     }
 
-@media (max-width: 768px) {
-  .main-content {
-    flex-direction: column;
-    align-items: center;
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
 
-    // Oculta a seção esquerda
-    .left-section {
-      display: none;
-    }
+        .left-section {
+          display: none;
+        }
 
-    // Oculta a navbar e o header
-    app-navbar,
-    app-header {
-      display: none; // Esconde a navbar e o header em telas menores
-    }
+        app-navbar,
+        app-header {
+          display: none; 
+        }
 
-    // Aumenta a largura da seção direita
-    .right-section {
-      width: 100%; // Garante que a seção direita ocupe 100% da largura
-      padding: 0; // Remove padding se necessário
+        .right-section {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      .right-section > .dashboard-container {
+        width: 100%;
+      }
     }
   }
-
-  // Para garantir que os componentes dentro de right-section também ocupem 100% da largura
-  .right-section > .dashboard-container {
-    width: 100%; // Garante que o container ocupe toda a largura
-  }
-}
-    }
 }
